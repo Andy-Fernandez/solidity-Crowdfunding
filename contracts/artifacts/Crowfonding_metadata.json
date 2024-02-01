@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "_nuevoEstado",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "_proyectAdress",
+						"type": "address"
+					}
+				],
+				"name": "changeProjectState",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_proyectAdress",
+						"type": "address"
+					}
+				],
+				"name": "fundProject",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Crowdfunding.sol": "Crowfonding"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Crowdfunding.sol": {
+			"keccak256": "0x965e071f02fba4d52f9d9c6a3c900359b8de238624ec117c0265b520e554f213",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f240188817add7ba97516ecc19b6cf1e5c56abd984a2c35ef79edc86f4feb2a6",
+				"dweb:/ipfs/QmZhDj1eiCUG3UmTA7BswSrmSNAtuhcGtQ5ooRfR3XMHWz"
+			]
+		}
+	},
+	"version": 1
+}
