@@ -32,6 +32,44 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "editor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "newStatus",
+						"type": "string"
+					}
+				],
+				"name": "ChangeProjectState",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "funder",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "FundProject",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "author",
 				"outputs": [
@@ -156,7 +194,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Crowdfunding2.sol": "Crowfonding"
+			"contracts/Crowdfunding3.sol": "Crowfonding"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -170,12 +208,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Crowdfunding2.sol": {
-			"keccak256": "0x7ef0e6fa836bb78be595bff7b7c967a4cd1ea75b56248c31f57efd00dbc7c3a3",
+		"contracts/Crowdfunding3.sol": {
+			"keccak256": "0x56e9d0b4d01ff4535b05a37a80dea16a5a9b7b883ae50d4260497876845f13cf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://99e142df2872c212f47c2138503d93b337f2faff0d33da8d55b71765e5ab909c",
-				"dweb:/ipfs/QmT4pTcip2Bm8njqz3wLqfbQo7ckvKyZyfHPiYywVVRPrK"
+				"bzz-raw://9cc4fe1fcef6320ff8308e3a78315470c9dcb862abb07a03b8578228d740aa30",
+				"dweb:/ipfs/QmciB59Bm3P7wjLxxv4omxoxEiDHi5ZVhLYMt91NxgLBYW"
 			]
 		}
 	},
