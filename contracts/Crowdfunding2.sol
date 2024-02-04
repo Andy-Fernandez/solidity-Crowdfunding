@@ -2,11 +2,10 @@
 pragma solidity ^0.8.0;
 
 /*
-### Reto 1 - Crowdfunding
+### Challenge 2 - Crowdfunding
 
-- Crea un contrato y agrega variables de estado.
-- Crea una función fundProject que permita enviar ether a un proyecto.
-- Crea una función changeProjectState que permita cambiar el estado de un proyecto.
+- Use a function modifier to allow only the author to change the state.
+- Use a function modifier to prevent an author from contributing to their own project.
 
 */
 contract Crowfonding {
@@ -29,13 +28,23 @@ contract Crowfonding {
         funds = 0;
     }
 
-    function fundProject() public payable{
+    modifier onlyOwner () {
+        require(msg.sender == author, "Only the owner can chenge ther project state");
+        _;
+    }
+
+    modifier notOwner () {
+        require(msg.sender != author, "Owners can't fund thir porject");
+        _;
+    }
+
+    function fundProject() public payable notOwner{
         require(keccak256(abi.encodePacked(state)) == keccak256(abi.encodePacked('Opened')), "Project is not able to accept funds");
         author.transfer(msg.value);
         funds += msg.value; 
     }
 
-    function changeProjectState(string calldata _newState) public {
+    function changeProjectState(string calldata _newState) public onlyOwner{
         state = _newState;
     }
 }

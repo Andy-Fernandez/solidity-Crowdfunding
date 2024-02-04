@@ -156,7 +156,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Crowdfunding.sol": "Crowfonding"
+			"contracts/Crowdfunding2.sol": "Crowfonding"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -170,12 +170,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Crowdfunding.sol": {
-			"keccak256": "0x1663f9472623a1e641931d64a60c6e732e1a0110d42bbfeb356f4c721a1d8222",
+		"contracts/Crowdfunding2.sol": {
+			"keccak256": "0xaf698bf73370e163e3a964098085eaeb0b6e3d391890b59d9d4d7f6343673fe3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://466e973d0f8d464beaa049666682611479179f76b81d11b489dc02e52270c64c",
-				"dweb:/ipfs/QmPKmwW5XW2AHTfaAUuMcaMXewrQaZzRdssE92rYJvVQcv"
+				"bzz-raw://552dcf3938a63036b31c1ae684b76b65ac14c7e7cc0f03231bc0d5c2ed227e5a",
+				"dweb:/ipfs/QmWh3CrdMALAVKaZSXFr9zgPFbcQ1VZK16Bog57j3zS4Ej"
 			]
 		}
 	},
