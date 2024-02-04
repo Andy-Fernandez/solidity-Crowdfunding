@@ -10,25 +10,32 @@ pragma solidity ^0.8.0;
 
 */
 contract Crowfonding {
+
+    string public id;
+    string public name;
+    string public description;
+    address payable public author;
+    string public state;
+    uint public funds;
+    uint public fundarisingGoal;
     
-
-    struct Proyecto {
-        bool disponibilidad;
-        uint fondosRecibidos;
+    constructor(string memory _id, string memory _name, string memory _description, uint _fundarisingGoal){
+        id = _id;
+        name =_name;
+        description = _description;
+        author = payable(msg.sender); 
+        fundarisingGoal = _fundarisingGoal;
+        state = 'Opened';
+        funds = 0;
     }
 
-    mapping(address => Proyecto) proyectos;
-
-    function fundProject(address _proyectAdress) public payable{
-        Proyecto storage proyecto = proyectos[_proyectAdress];
-        require(proyecto.disponibilidad, "El proyecto ya no recibe fondos");
-        proyecto.fondosRecibidos += msg.value; 
+    function fundProject() public payable{
+        require(keccak256(abi.encodePacked(state)) != keccak256(abi.encodePacked('Opened')), "Project is not able to accept funds");
+        author.transfer(msg.value);
+        funds += msg.value; 
     }
 
-
-
-    function changeProjectState(bool _nuevoEstado, address _proyectAdress) public {
-        Proyecto storage proyecto = proyectos[_proyectAdress];
-        proyecto.disponibilidad = _nuevoEstado;
+    function changeProjectState(string calldata _newState) public {
+        state = _newState;
     }
 }

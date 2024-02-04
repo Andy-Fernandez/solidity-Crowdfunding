@@ -8,14 +8,48 @@
 			{
 				"inputs": [
 					{
-						"internalType": "bool",
-						"name": "_nuevoEstado",
-						"type": "bool"
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
 					},
 					{
-						"internalType": "address",
-						"name": "_proyectAdress",
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_fundarisingGoal",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "author",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_newState",
+						"type": "string"
 					}
 				],
 				"name": "changeProjectState",
@@ -24,16 +58,88 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "description",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "_proyectAdress",
-						"type": "address"
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "fundProject",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fundarisingGoal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "funds",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "id",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "state",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -65,11 +171,11 @@
 	},
 	"sources": {
 		"contracts/Crowdfunding.sol": {
-			"keccak256": "0x965e071f02fba4d52f9d9c6a3c900359b8de238624ec117c0265b520e554f213",
+			"keccak256": "0x1663f9472623a1e641931d64a60c6e732e1a0110d42bbfeb356f4c721a1d8222",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f240188817add7ba97516ecc19b6cf1e5c56abd984a2c35ef79edc86f4feb2a6",
-				"dweb:/ipfs/QmZhDj1eiCUG3UmTA7BswSrmSNAtuhcGtQ5ooRfR3XMHWz"
+				"bzz-raw://466e973d0f8d464beaa049666682611479179f76b81d11b489dc02e52270c64c",
+				"dweb:/ipfs/QmPKmwW5XW2AHTfaAUuMcaMXewrQaZzRdssE92rYJvVQcv"
 			]
 		}
 	},
