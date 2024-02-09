@@ -28,8 +28,15 @@ contract Crowfonding {
         funds = 0;
     }
 
-    event FundProject(address funder, uint amount);
-    event ChangeProjectState(address editor, string newStatus);
+    event FundProject(
+        address funder, // another opcion is use idProyect 'couse is relevant for any app 
+        uint amount
+    );
+    
+    event ChangeProjectState(
+        address editor, // another opcion is use idProyect too
+        string newStatus
+    );
 
     modifier onlyOwner () {
         require(

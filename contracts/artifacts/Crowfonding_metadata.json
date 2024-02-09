@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.17+commit.8df45f5f"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
@@ -30,6 +30,28 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "stateClosed",
+						"type": "string"
+					}
+				],
+				"name": "StateClosed",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newState",
+						"type": "string"
+					}
+				],
+				"name": "StateNotDefined",
+				"type": "error"
 			},
 			{
 				"anonymous": false,
@@ -194,9 +216,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Crowdfunding3.sol": "Crowfonding"
+			"contracts/Crowdfunding4.sol": "Crowfonding"
 		},
-		"evmVersion": "london",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -208,12 +230,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Crowdfunding3.sol": {
-			"keccak256": "0x56e9d0b4d01ff4535b05a37a80dea16a5a9b7b883ae50d4260497876845f13cf",
+		"contracts/Crowdfunding4.sol": {
+			"keccak256": "0xeeef51db021308777a6b725626f4ca469901ac9d252d66499a65faf18085490c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9cc4fe1fcef6320ff8308e3a78315470c9dcb862abb07a03b8578228d740aa30",
-				"dweb:/ipfs/QmciB59Bm3P7wjLxxv4omxoxEiDHi5ZVhLYMt91NxgLBYW"
+				"bzz-raw://22e0a19a036cc31c14987ed29b410de4e6ac13673e8d313a7d5b7cd234210c9a",
+				"dweb:/ipfs/QmXfaPFE1AHUXvBrnX1nJdzXvmz59P4qSr6C6yJnRc168Q"
 			]
 		}
 	},
